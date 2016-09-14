@@ -14,6 +14,10 @@ public class Nota {
     private int horaNota;
     private int minutoNota;
 
+    public Nota(String titulo, String contenido) {
+        this.titulo = titulo;
+        this.contenido = contenido;
+    }
 
     public Nota() {
     }
