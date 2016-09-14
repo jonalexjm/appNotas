@@ -1,9 +1,12 @@
 package jonalexjm.com.appnotas;
 
+import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -32,7 +35,17 @@ public class MainActivity extends AppCompatActivity {
         inicializarAdaptador();
 
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.floatButton);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AdicionarNota.class ));
+            }
+        });
     }
+
+
+
 
     public void inicializarAdaptador(){
 
@@ -45,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
         notas = new ArrayList<Nota>();
 
-        notas.add(new Nota("1", "Caminata nocturna","se realiza una caminata de acuerdo al plan",12,34, 12,34, 12));
-        notas.add(new Nota("2","Noche de sexo","se realiza una buena noche romantica",23,34, 12,34, 12));
+        notas.add(new Nota(1, "Caminata nocturna","se realiza una caminata de acuerdo al plan",12,34, 12,34, 12));
+        notas.add(new Nota(2,"Noche de sexo","se realiza una buena noche romantica",23,34, 12,34, 12));
 
 
     }

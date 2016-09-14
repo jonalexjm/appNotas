@@ -5,7 +5,7 @@ package jonalexjm.com.appnotas.pojo;
  */
 public class Nota {
 
-    private String id;
+    private int id;
     private String titulo;
     private String contenido;
     private int diaNota;
@@ -25,7 +25,7 @@ public class Nota {
         this.horaNota = horaNota;
     }
 
-    public Nota(String id, String titulo, String contenido, int diaNota, int mesNota, int annoNota, int minutoNota, int horaNota) {
+    public Nota(int id, String titulo, String contenido, int diaNota, int mesNota, int annoNota, int horaNota, int minutoNota) {
         this.id = id;
         this.titulo = titulo;
         this.contenido = contenido;
@@ -36,11 +36,11 @@ public class Nota {
         this.horaNota = horaNota;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
