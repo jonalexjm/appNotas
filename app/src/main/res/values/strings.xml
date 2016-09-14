@@ -4,4 +4,9 @@
     <string name="cuerpoNota">cuerpo de la nota</string>
     <string name="fecha">15 de Julio 2015</string>
     <string name="horaNota">15:00 PM</string>
+    <string name="title_activity_agregar_nota">AgregarNota</string>
+    <string name="agregarNota">Por favor llene el siguiente formulario</string>
+    <string name="titulo">Titulo Nota</string>
+    <string name="contenido">contenido</string>
+    <string name="agregarFecha">agregar fecha</string>
 </resources>
