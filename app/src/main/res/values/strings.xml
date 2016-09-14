@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notas rapidas</string>
+    <string name="tituloNota">TITULO NOTA</string>
+    <string name="cuerpoNota">cuerpo de la nota</string>
+    <string name="fecha">15 de Julio 2015</string>
+    <string name="horaNota">15:00 PM</string>
+</resources>
