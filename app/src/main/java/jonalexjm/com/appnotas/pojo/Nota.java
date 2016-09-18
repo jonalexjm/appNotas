@@ -22,11 +22,12 @@ public class Nota {
     public Nota() {
     }
 
-    public Nota(String contenido, String titulo, int diaNota, int horaNota) {
+    public Nota(String contenido, String titulo, int diaNota, int mesNota, int annoNota) {
         this.contenido = contenido;
         this.titulo = titulo;
         this.diaNota = diaNota;
-        this.horaNota = horaNota;
+        this.mesNota = mesNota;
+        this.annoNota = mesNota;
     }
 
     public Nota(int id, String titulo, String contenido, int diaNota, int mesNota, int annoNota, int horaNota, int minutoNota) {

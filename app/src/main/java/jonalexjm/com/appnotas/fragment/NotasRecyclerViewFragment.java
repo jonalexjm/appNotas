@@ -18,7 +18,7 @@ import jonalexjm.com.appnotas.pojo.Nota;
 /**
  * Created by andrea on 18/09/2016.
  */
-public class NotasRecyclerViewFragment extends Fragment {
+public class NotasRecyclerViewFragment extends Fragment implements INotasRecyclerViewFragmentView {
 
     private RecyclerView rvNota;
     ArrayList<Nota> notas;
@@ -31,23 +31,11 @@ public class NotasRecyclerViewFragment extends Fragment {
 
         rvNota = (RecyclerView) v.findViewById(R.id.rvNota);
 
-
-        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
-        rvNota.setLayoutManager(llm);
-
-        inicializarListaNotas();
-        inicializarAdaptador();
         return v;
     }
 
-    public void inicializarAdaptador(){
 
-        NotaAdaptador adaptador = new NotaAdaptador(notas, getActivity());
-        rvNota.setAdapter(adaptador);
-
-    }
-
+/*
     public void inicializarListaNotas(){
 
         notas = new ArrayList<Nota>();
@@ -55,6 +43,29 @@ public class NotasRecyclerViewFragment extends Fragment {
         notas.add(new Nota(1, "Caminata nocturna","se realiza una caminata de acuerdo al plan",12,34, 12,34, 12));
         notas.add(new Nota(2,"Noche de sexo","se realiza una buena noche romantica",23,34, 12,34, 12));
 
+
+    }
+
+  */
+
+    @Override
+    public void generarLinearLayoutVertical() {
+        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        rvNota.setLayoutManager(llm);
+
+    }
+
+    @Override
+    public NotaAdaptador crearAdaptador(ArrayList<Nota> notas) {
+        NotaAdaptador adaptador = new NotaAdaptador(notas, getActivity());
+        return adaptador;
+    }
+
+    @Override
+    public void inicializarAdaptadorRV(NotaAdaptador adaptador) {
+
+        rvNota.setAdapter(adaptador);
 
     }
 }
