@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="jonalexjm.com.appnotas.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvNota"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatButton"
-        android:layout_width="wrap_content"
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/mas"
-        android:layout_weight="1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/rvNota"
-        android:layout_alignEnd="@+id/rvNota"
-        android:background="#074ff8" />
-</RelativeLayout>
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+        </android.support.v7.widget.Toolbar>
+       <android.support.design.widget.TabLayout
+           android:id="@+id/tabLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+       </android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
