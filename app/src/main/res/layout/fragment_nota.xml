@@ -1,13 +1,119 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.NotaFragment">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/scrollView1"
+        >
+        <LinearLayout
+            android:id="@+id/widget33"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITULO"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/edTxtTitulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+            </EditText>
+            <TextView
+                android:id="@+id/txtContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTENIDO"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/edTxtContendio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+            </EditText>
+            <LinearLayout
+                android:id="@+id/widget36"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                >
+                <TextView
+                    android:id="@+id/txtFecha"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="FECHA"
+                    >
+                </TextView>
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/widget39"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                >
 
-</FrameLayout>
+                <EditText
+                    android:id="@+id/edTxtModelo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    >
+                </EditText>
+                <EditText
+                    android:id="@+id/edTxtColor"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    >
+                </EditText>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                >
+                <TextView
+                    android:id="@+id/txtVwDescripicion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+                    >
+                </TextView>
+                <EditText
+                    android:id="@+id/edTxtDescripcion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button android:layout_height="wrap_content"
+                    android:id="@+id/btnAgregarNota"
+                    android:layout_width="fill_parent"
+                    android:text="Agregar Nota :)">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

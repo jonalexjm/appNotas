@@ -8,11 +8,11 @@ public class Nota {
     private int id;
     private String titulo;
     private String contenido;
-    private int diaNota;
-    private int mesNota;
-    private int annoNota;
-    private int horaNota;
-    private int minutoNota;
+    private int diaNota = 0;
+    private int mesNota = 0;
+    private int annoNota = 0;
+    private int horaNota = 0;
+    private int minutoNota = 0;
 
     public Nota(String titulo, String contenido) {
         this.titulo = titulo;

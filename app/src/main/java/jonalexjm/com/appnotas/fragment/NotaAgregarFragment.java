@@ -13,10 +13,10 @@ import jonalexjm.com.appnotas.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class NotaFragment extends Fragment {
+public class NotaAgregarFragment extends Fragment {
 
 
-    public NotaFragment() {
+    public NotaAgregarFragment() {
         // Required empty public constructor
     }
 

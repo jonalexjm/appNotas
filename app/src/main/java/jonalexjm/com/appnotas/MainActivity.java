@@ -1,22 +1,18 @@
 package jonalexjm.com.appnotas;
 
-import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import java.util.ArrayList;
 
 import jonalexjm.com.appnotas.adaptador.NotaAdaptador;
 import jonalexjm.com.appnotas.adaptador.PageAdaptador;
-import jonalexjm.com.appnotas.fragment.NotaFragment;
+import jonalexjm.com.appnotas.fragment.NotaAgregarFragment;
 import jonalexjm.com.appnotas.fragment.NotasRecyclerViewFragment;
 import jonalexjm.com.appnotas.pojo.Nota;
 
@@ -53,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Fragment> agregarFragment(){//agregar los fragment al arreglo
         ArrayList<Fragment> fragments = new ArrayList<>();
         fragments.add(new NotasRecyclerViewFragment());
-        fragments.add(new NotaFragment());
+        fragments.add(new NotaAgregarFragment());
 
         return fragments;
     }

@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import jonalexjm.com.appnotas.Presentador.INotasRecyclerViewFragmentPresentador;
+import jonalexjm.com.appnotas.Presentador.NotaRecyclerViewFragmentPresentador;
 import jonalexjm.com.appnotas.R;
 import jonalexjm.com.appnotas.adaptador.NotaAdaptador;
 import jonalexjm.com.appnotas.pojo.Nota;
@@ -22,6 +24,7 @@ public class NotasRecyclerViewFragment extends Fragment implements INotasRecycle
 
     private RecyclerView rvNota;
     ArrayList<Nota> notas;
+    private INotasRecyclerViewFragmentPresentador presentador;
 
     @Nullable
     @Override
@@ -30,23 +33,13 @@ public class NotasRecyclerViewFragment extends Fragment implements INotasRecycle
         View v = inflater.inflate(R.layout.fragment_notasrecyclerview, container, false);//RELACIONA AL LAYOUT
 
         rvNota = (RecyclerView) v.findViewById(R.id.rvNota);
+        presentador = new NotaRecyclerViewFragmentPresentador(this, getContext());
 
         return v;
     }
 
 
-/*
-    public void inicializarListaNotas(){
 
-        notas = new ArrayList<Nota>();
-
-        notas.add(new Nota(1, "Caminata nocturna","se realiza una caminata de acuerdo al plan",12,34, 12,34, 12));
-        notas.add(new Nota(2,"Noche de sexo","se realiza una buena noche romantica",23,34, 12,34, 12));
-
-
-    }
-
-  */
 
     @Override
     public void generarLinearLayoutVertical() {
