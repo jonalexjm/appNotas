@@ -37,7 +37,7 @@
                 >
             </TextView>
             <EditText
-                android:id="@+id/edTxtContendio"
+                android:id="@+id/edTxtContenido"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 >
@@ -50,8 +50,10 @@
                 >
                 <TextView
                     android:id="@+id/txtFecha"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:text="FECHA"
                     >
                 </TextView>
@@ -64,20 +66,43 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 >
 
-                <EditText
-                    android:id="@+id/edTxtModelo"
-                    android:layout_width="150dp"
+                <Button
                     android:layout_height="wrap_content"
-                    android:inputType="number"
-                    >
-                </EditText>
-                <EditText
-                    android:id="@+id/edTxtColor"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    >
-                </EditText>
+                    android:id="@+id/btnEscoger_fecha"
+                    android:layout_width="fill_parent"
+                    android:text="Buscar Fecha"/>
 
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            >
+            <TextView
+                android:id="@+id/txtDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DIA"
+                />
+            <TextView
+                android:id="@+id/txtMes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MES"
+                />
+            <TextView
+                android:id="@+id/txtAnno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AÑO"
+                />
 
 
             </LinearLayout>
@@ -88,19 +113,16 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 >
                 <TextView
-                    android:id="@+id/txtVwDescripicion"
+                    android:id="@+id/txtHora"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Descripcion"
-                    >
-                </TextView>
-                <EditText
-                    android:id="@+id/edTxtDescripcion"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textMultiLine"
-                    >
-                </EditText>
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="HORA"
+                    />
+
+
+
             </LinearLayout>
             <LinearLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
