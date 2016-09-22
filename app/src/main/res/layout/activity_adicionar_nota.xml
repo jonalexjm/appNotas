@@ -17,6 +17,14 @@
             android:orientation="vertical"
             >
             <TextView
+                android:id="@+id/txtBienvenida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Por favor ingrese la nueva nota"
+                android:textSize="25dp"
+
+                />
+            <TextView
                 android:id="@+id/txtTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,13 +121,57 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 >
                 <TextView
-                    android:id="@+id/txtHora"
+                    android:id="@+id/txtHora1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="HORA"
+                    android:layout_weight="1"
+
                     />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                >
+                <Button
+                    android:id="@+id/btnAgregarHora"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buscar hora"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:id="@+id/txtHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hora"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/txtMinutos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="minutos"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
 
 
 
